@@ -8,3 +8,11 @@ begin_builder_transaction
 add_operation_to_builder_transaction 0 ["donate", {"from":"test2","to":"test3","amount":"1.000 GOLOS","memo":{"app":"golos-io","version":1,"target":{"author":1},"target2":{"author":1}}}]
 sign_builder_transaction 0 true
 ```
+
+```
+invite cyberfounder "11.000 GOLOS" "GLS7Pbawjjr71ybgT6L2yni3B3LXYiJqEGnuFSq1MV9cjnV24dMG3" true
+
+claim_invite cyberfounder cyberfounder "5JFZC7AtEe1wF2ce6vPAUxDeevzYkPgmtR14z9ZVgvCCtrFAaLw" true
+
+create_account_invite cyberfounder cat "{}" "5JFZC7AtEe1wF2ce6vPAUxDeevzYkPgmtR14z9ZVgvCCtrFAaLw" true
+```
