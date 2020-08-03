@@ -1,4 +1,15 @@
-# test
+# test HF 24
+```
+asset_create cyberfounder "100000.000 TOKENCHIK" true
+asset_create cyberfounder "1 TOKENCHIK.CENT" true
+asset_create cyberfounder "1 GOLOS.CENT" true
+asset_create cyberfounder "1 LONGLONGTOOLONGTICKER" true
+
+transfer cyberfounder test "0.001 TOKENCHIK" "" true
+transfer cyberfounder test "1 TOKENCHIK.CENT" "" true
+```
+
+# test HF 23
 ```
 transfer_to_tip test2 "" "0.001 GOLOS" "" true
 transfer_from_tip test2 "" "0.001 GOLOS" "" true
