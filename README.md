@@ -1,12 +1,12 @@
 # test HF 24
 ```
 create_asset cyberfounder "100000.000 TOKENCHIK" true
-create_asset cyberfounder "1. TOKENCHIK.CENT" true
-create_asset cyberfounder "1. GOLOS.CENT" true
-create_asset cyberfounder "1. LONGLONGTOOLONGTICKER" true
+create_asset cyberfounder "1.0 TOKENCHIK.CENT" true
+create_asset cyberfounder "1.0 GOLOS.CENT" true
+create_asset cyberfounder "1.0 LONGLONGTOOLONGTICKER" true
 
 transfer cyberfounder test "0.001 TOKENCHIK" "" true
-transfer cyberfounder test "1. TOKENCHIK.CENT" "" true
+transfer cyberfounder test "1.0 TOKENCHIK.CENT" "" true
 ```
 
 # test HF 23
