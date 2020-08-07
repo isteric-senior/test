@@ -5,8 +5,11 @@ create_asset cyberfounder "1.0 TOKENCHIK.CENT" true
 create_asset cyberfounder "1.0 GOLOS.CENT" true
 create_asset cyberfounder "1.0 LONGLONGTOOLONGTICKER" true
 
-transfer cyberfounder test "0.001 TOKENCHIK" "" true
+transfer cyberfounder test "0.005 TOKENCHIK" "" true
 transfer cyberfounder test "1.0 TOKENCHIK.CENT" "" true
+
+transfer_to_tip test "" "0.002 TOKENCHIK" "" true
+donate test cyberfounder "0.002 TOKENCHIK" {"app":"test-uia","version":1} true
 ```
 
 # test HF 23
