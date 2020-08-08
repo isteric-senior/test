@@ -12,8 +12,11 @@ transfer_to_tip test "" "0.002 TOKENCHIK" "" true
 donate test cyberfounder "0.002 TOKENCHIK" {"app":"test-uia","version":1} true
 
 update_asset cyberfounder "TOKENCHIK" ["GOLOS"] 10000 true
+
 transfer_asset cyberfounder "TOKENCHIK" test true
-create_order test 1270001 "10.000 TOKENCHIK" "10.000 GBG" false 3600 true
+
+create_order test 1270001 "10.000 GOLOS" "10.000 TOKENCHIK" false 3600 true
+create_order cyberfounder 1270002 "10.000 TOKENCHIK" "10.000 GOLOS" true 3600 true
 ```
 
 # test HF 23
