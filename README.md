@@ -13,6 +13,7 @@ donate test cyberfounder "0.002 TOKENCHIK" {"app":"test-uia","version":1} true
 
 update_asset cyberfounder "TOKENCHIK" ["GOLOS"] 10000 true
 transfer_asset cyberfounder "TOKENCHIK" test true
+create_order test 1270001 "10.000 TOKENCHIK" "10.000 GBG" false 3600 true
 ```
 
 # test HF 23
