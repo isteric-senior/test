@@ -10,6 +10,9 @@ transfer cyberfounder test "1.0 TOKENCHIK.CENT" "" true
 
 transfer_to_tip test "" "0.002 TOKENCHIK" "" true
 donate test cyberfounder "0.002 TOKENCHIK" {"app":"test-uia","version":1} true
+
+update_asset cyberfounder "TOKENCHIK" ["GOLOS"] 10000 true
+transfer_asset cyberfounder "TOKENCHIK" test true
 ```
 
 # test HF 23
