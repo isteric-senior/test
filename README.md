@@ -1,6 +1,6 @@
 # test HF 24
 ```
-create_asset cyberfounder "100000.000 TOKENCHIK" true
+create_asset cyberfounder "100000.000 TOKENCHIK" true true
 create_asset cyberfounder "1.0 TOKENCHIK.CENT" true
 create_asset cyberfounder "1.0 GOLOS.CENT" true
 create_asset cyberfounder "1.0 LONGLONGTOOLONGTICKER" true
