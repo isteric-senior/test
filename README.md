@@ -1,9 +1,10 @@
 # test HF 24
 ```
-create_asset cyberfounder "100000.000 TOKENCHIK" true true
-create_asset cyberfounder "1.0 TOKENCHIK.CENT" false true
-create_asset cyberfounder "1.0 GOLOS.CENT" true true
-create_asset cyberfounder "1.0 LONGLONGTOOLONGTICKER" true true
+create_asset cyberfounder "100000.000 TOKENCHIK" true true true
+create_asset cyberfounder "1.0 TOKENCHIK.CENT" false false true
+create_asset cyberfounder "1.0 GOLOS.CENT" true true true
+create_asset cyberfounder "1.0 LONGLONGTOOLONGTICKER" true true true
+// creator max_supply allow_fee allow_override_transfer reallyBroadcast
 
 transfer cyberfounder test "0.005 TOKENCHIK" "" true
 transfer cyberfounder test "1.0 TOKENCHIK.CENT" "" true
