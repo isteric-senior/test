@@ -6,13 +6,15 @@ create_asset cyberfounder "1.0 GOLOS.CENT" true true true
 create_asset cyberfounder "1.0 LONGLONGTOOLONGTICKER" true true true
 // creator max_supply allow_fee allow_override_transfer reallyBroadcast
 
+update_asset cyberfounder "TOKENCHIK" ["GOLOS"] 10000 true
+
+issue_asset cyberfounder "1000.000 TOKENCHIK" "" true
+
 transfer cyberfounder test "0.005 TOKENCHIK" "" true
 transfer cyberfounder test "1.0 TOKENCHIK.CENT" "" true
 
 transfer_to_tip test "" "0.002 TOKENCHIK" "" true
 donate test cyberfounder "0.002 TOKENCHIK" {"app":"test-uia","version":1} true
-
-update_asset cyberfounder "TOKENCHIK" ["GOLOS"] 10000 true
 
 transfer_asset cyberfounder "TOKENCHIK" test true
 
