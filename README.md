@@ -20,6 +20,8 @@ transfer_asset cyberfounder "TOKENCHIK" test true
 
 create_order test 1270001 "10.000 GOLOS" "10.000 TOKENCHIK" false 3600 true
 create_order cyberfounder 1270002 "10.000 TOKENCHIK" "10.000 GOLOS" true 3600 true
+
+override_transfer cyberfounder test test2 "0.005 TOKENCHIK" "" true
 ```
 
 # test HF 23
