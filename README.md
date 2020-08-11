@@ -1,3 +1,107 @@
+# test HF 24 with golos-classic-js (use 0.7.50 version!)
+
+```
+function example_create() {
+  golos.broadcast.assetCreate(
+    '5JVFFWRLwz6JoP9kguuRFfytToGU6cLgBVTL9t6NB3D3BQLbUBS',
+    'cyberfounder', '1000.000 SUPERFANTIK', true, true,
+    [], function(err, res) {
+      console.log(err);
+      console.log(res);
+  });
+}
+
+function example_update() {
+  golos.broadcast.assetUpdate(
+    '5JVFFWRLwz6JoP9kguuRFfytToGU6cLgBVTL9t6NB3D3BQLbUBS',
+    'cyberfounder', 'SUPERFANTIK', ['GOLOS'], 10000,
+    [], function(err, res) {
+      console.log(err);
+      console.log(res);
+  })
+}
+
+function example_issue() {
+  golos.broadcast.assetIssue(
+    '5JVFFWRLwz6JoP9kguuRFfytToGU6cLgBVTL9t6NB3D3BQLbUBS',
+    'cyberfounder', '1000.000 SUPERFANTIK', '',
+    [], function(err, res) {
+      console.log(err);
+      console.log(res);
+  })
+}
+
+function example_transfer() {
+  golos.broadcast.transfer(
+    '5JVFFWRLwz6JoP9kguuRFfytToGU6cLgBVTL9t6NB3D3BQLbUBS',
+    'cyberfounder', 'test', '1.000 SUPERFANTIK', 'Hello world!',
+    function(err, res) {
+      console.log(err);
+      console.log(res);
+  })
+}
+
+function example_override_transfer() {
+  golos.broadcast.overrideTransfer(
+    '5JVFFWRLwz6JoP9kguuRFfytToGU6cLgBVTL9t6NB3D3BQLbUBS',
+    'cyberfounder', 'test', 'test2', '1.000 SUPERFANTIK', 'Hello world!',
+    [], function(err, res) {
+      console.log(err);
+      console.log(res);
+  })
+}
+
+function example_transfer_to_tip() {
+  golos.broadcast.transferToTip(
+    '5JVFFWRLwz6JoP9kguuRFfytToGU6cLgBVTL9t6NB3D3BQLbUBS',
+    'cyberfounder', '', '1.000 SUPERFANTIK', 'Hello world!',
+    [], function(err, res) {
+      console.log(err);
+      console.log(res);
+  })
+}
+
+function example_donate() {
+  golos.broadcast.donate(
+    '5JVFFWRLwz6JoP9kguuRFfytToGU6cLgBVTL9t6NB3D3BQLbUBS',
+    'cyberfounder', 'test', '1.000 SUPERFANTIK', {app:'uia-test-js',version:1,target:{'author':'test'}},
+    [], function(err, res) {
+      console.log(err);
+      console.log(res);
+  })
+}
+
+function example_invite() {
+  golos.broadcast.invite(
+    '5JVFFWRLwz6JoP9kguuRFfytToGU6cLgBVTL9t6NB3D3BQLbUBS',
+    'cyberfounder', '11.000 SUPERFANTIK', 'GLS7Pbawjjr71ybgT6L2yni3B3LXYiJqEGnuFSq1MV9cjnV24dMG3',
+    [], function(err, res) {
+      console.log(err);
+      console.log(res);
+  })
+}
+
+function example_invite_claim() {
+  golos.broadcast.inviteClaim(
+    '5JVFFWRLwz6JoP9kguuRFfytToGU6cLgBVTL9t6NB3D3BQLbUBS',
+    'cyberfounder', 'cyberfounder', '5JFZC7AtEe1wF2ce6vPAUxDeevzYkPgmtR14z9ZVgvCCtrFAaLw',
+    [], function(err, res) {
+      console.log(err);
+      console.log(res);
+  })
+}
+
+function example_asset_transfer() {
+  golos.broadcast.assetTransfer(
+    '5JVFFWRLwz6JoP9kguuRFfytToGU6cLgBVTL9t6NB3D3BQLbUBS',
+    'cyberfounder', 'SUPERFANTIK', 'test',
+    [], function(err, res) {
+      console.log(err);
+      console.log(res);
+  })
+}
+```
+
 # test HF 24
 ```
 create_asset cyberfounder "100000.000 TOKENCHIK" true true true
