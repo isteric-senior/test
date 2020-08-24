@@ -104,13 +104,13 @@ function example_asset_transfer() {
 
 # test HF 24
 ```
-create_asset cyberfounder "100000.000 TOKENCHIK" true true true
-create_asset cyberfounder "1.0 TOKENCHIK.CENT" false false true
-create_asset cyberfounder "1.0 GOLOS.CENT" true true true
-create_asset cyberfounder "1.0 LONGLONGTOOLONGTICKER" true true true
+create_asset cyberfounder "100000.000 TOKENCHIK" true true "{\"image_url\":\"https://market.rudex.org/asset-symbols/rudex.golos.png\",\"description\":\"http://golos.io/\"}" true
+create_asset cyberfounder "1.0 TOKENCHIK.CENT" false false "{}" true
+create_asset cyberfounder "1.0 GOLOS.CENT" true true "{}" true
+create_asset cyberfounder "1.0 LONGLONGTOOLONGTICKER" true true "{}" true
 // creator max_supply allow_fee allow_override_transfer reallyBroadcast
 
-update_asset cyberfounder "TOKENCHIK" ["GOLOS"] 10000 true
+update_asset cyberfounder "TOKENCHIK" ["GOLOS"] 10000 "{\"image_url\":\"https://market.rudex.org/asset-symbols/rudex.golos.png\",\"description\":\"http://golos.io/\"}" true
 
 issue_asset cyberfounder "1000.000 TOKENCHIK" "" true
 
