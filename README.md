@@ -1,10 +1,10 @@
-# test HF 24 with golos-classic-js (use 0.7.50 version!)
+# test HF 24 with golos-classic-js (use 0.7.56 version!)
 
 ```
 function example_create() {
   golos.broadcast.assetCreate(
     '5JVFFWRLwz6JoP9kguuRFfytToGU6cLgBVTL9t6NB3D3BQLbUBS',
-    'cyberfounder', '1000.000 SUPERFANTIK', true, true,
+    'cyberfounder', '1000.000 SUPERFANTIK', true, true, "{\"image_url\":\"https://market.rudex.org/asset-symbols/rudex.golos.png\",\"description\":\"http://golos.io/\"}",
     [], function(err, res) {
       console.log(err);
       console.log(res);
@@ -14,7 +14,7 @@ function example_create() {
 function example_update() {
   golos.broadcast.assetUpdate(
     '5JVFFWRLwz6JoP9kguuRFfytToGU6cLgBVTL9t6NB3D3BQLbUBS',
-    'cyberfounder', 'SUPERFANTIK', ['GOLOS'], 10000,
+    'cyberfounder', 'SUPERFANTIK', ['GOLOS'], 10000, "{\"image_url\":\"https://market.rudex.org/asset-symbols/rudex.golos.png\",\"description\":\"http://golos.io/\"}",
     [], function(err, res) {
       console.log(err);
       console.log(res);
