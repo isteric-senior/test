@@ -1,4 +1,4 @@
-# test HF 24 with golos-classic-js (use 0.7.56 version!)
+# test HF 24 with golos-classic-js (use 0.7.57 version!)
 
 ```
 function example_create() {
