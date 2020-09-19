@@ -107,9 +107,16 @@ function example_asset_transfer() {
 ## Invites
 
 ```
-donate_to_invite cyberfounder "GLS7Pbawjjr71ybgT6L2yni3B3LXYiJqEGnuFSq1MV9cjnV24dMG3" "11.000 GOLOS" "" true
+invite cyberfounder "11.000 GOLOS" "GLS7Pbawjjr71ybgT6L2yni3B3LXYiJqEGnuFSq1MV9cjnV24dMG3" [[0,{"is_referral":true}]] true
 
-transfer_invite cyberfounder "GLS7Pbawjjr71ybgT6L2yni3B3LXYiJqEGnuFSq1MV9cjnV24dMG3" "GLS6dY6p4sF4xZF2gX7EBYCWLfxhKjDKqHXJKLdeepViYMmG2zSWb" "11.000 GOLOS" "" true
+donate_to_invite cyberfounder "GLS7Pbawjjr71ybgT6L2yni3B3LXYiJqEGnuFSq1MV9cjnV24dMG3" "11.000 GOLOS" "" true
+```
+To transfer, you should firstly import the private key of "from" invite, otherwise cli_wallet can't sign transaction:
+```
+import_key 5JFZC7AtEe1wF2ce6vPAUxDeevzYkPgmtR14z9ZVgvCCtrFAaLw
+transfer_invite "GLS7Pbawjjr71ybgT6L2yni3B3LXYiJqEGnuFSq1MV9cjnV24dMG3" "GLS6dY6p4sF4xZF2gX7EBYCWLfxhKjDKqHXJKLdeepViYMmG2zSWb" "1.000 GOLOS" "" true
+
+create_account_invite cyberfounder cat "{}" "5JFZC7AtEe1wF2ce6vPAUxDeevzYkPgmtR14z9ZVgvCCtrFAaLw" true
 ```
 
 ## UIA
@@ -151,7 +158,7 @@ sign_builder_transaction 0 true
 ```
 
 ```
-invite cyberfounder "11.000 GOLOS" "GLS7Pbawjjr71ybgT6L2yni3B3LXYiJqEGnuFSq1MV9cjnV24dMG3" true
+invite cyberfounder "11.000 GOLOS" "GLS7Pbawjjr71ybgT6L2yni3B3LXYiJqEGnuFSq1MV9cjnV24dMG3" [[0,{"is_referral":false}]] true
 
 claim_invite cyberfounder cyberfounder "5JFZC7AtEe1wF2ce6vPAUxDeevzYkPgmtR14z9ZVgvCCtrFAaLw" true
 
