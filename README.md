@@ -115,7 +115,8 @@ To transfer, you should firstly import the private key of "from" invite, otherwi
 ```
 import_key 5JFZC7AtEe1wF2ce6vPAUxDeevzYkPgmtR14z9ZVgvCCtrFAaLw
 transfer_invite "GLS7Pbawjjr71ybgT6L2yni3B3LXYiJqEGnuFSq1MV9cjnV24dMG3" "GLS6dY6p4sF4xZF2gX7EBYCWLfxhKjDKqHXJKLdeepViYMmG2zSWb" "1.000 GOLOS" "" true
-
+```
+```
 create_account_invite cyberfounder cat "{}" "5JFZC7AtEe1wF2ce6vPAUxDeevzYkPgmtR14z9ZVgvCCtrFAaLw" true
 ```
 
