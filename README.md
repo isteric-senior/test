@@ -103,6 +103,15 @@ function example_asset_transfer() {
 ```
 
 # test HF 24
+
+## Invites
+
+```
+donate_to_invite cyberfounder "GLS7Pbawjjr71ybgT6L2yni3B3LXYiJqEGnuFSq1MV9cjnV24dMG3" "11.000 GOLOS" "" true
+```
+
+## UIA
+
 ```
 create_asset cyberfounder "100000.000 TOKENCHIK" true true "{\"image_url\":\"https://market.rudex.org/asset-symbols/rudex.golos.png\",\"description\":\"http://golos.io/\"}" true
 create_asset cyberfounder "1.0 TOKENCHIK.CENT" false false "{}" true
