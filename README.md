@@ -1,4 +1,4 @@
-# test HF 24 with golos-classic-js (use 0.7.57 version!)
+# test HF 24 with golos-classic-js (use 0.7.58 version!)
 
 ```
 function example_create() {
@@ -100,6 +100,17 @@ function example_asset_transfer() {
       console.log(res);
   })
 }
+
+function example_cancelOrders() {
+// base and quote are just for symbols (tickers)
+golos.broadcast.limitOrderCancelEx(wif, 'cyberfounder', 0, [[0,{"direction":{"base":"1.000 GBG","quote":"1.000 GOLOS"}}]], function(err, res) {
+  if (err) {
+    console.log(err);
+    alert(err);
+    return;
+  }
+  alert('order canceled');
+});
 ```
 
 # test HF 24
