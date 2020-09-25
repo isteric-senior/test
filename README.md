@@ -111,6 +111,25 @@ golos.broadcast.limitOrderCancelEx(wif, 'cyberfounder', 0, [[0,{"direction":{"ba
   }
   alert('order canceled');
 });
+
+
+golos.broadcast.inviteDonate(wif, 'cyberfounder', "GLS7Pbawjjr71ybgT6L2yni3B3LXYiJqEGnuFSq1MV9cjnV24dMG3", "100.000 GOLOS", "",[], function(err, res) {
+  if (err) {
+    console.log(err);
+    alert(err);
+    return;
+  }
+  alert('invite donated');
+});
+
+golos.broadcast.inviteTransfer(invitePrivateKey, 'GLS7Pbawjjr71ybgT6L2yni3B3LXYiJqEGnuFSq1MV9cjnV24dMG3', "anoth invite publick", "100.000 GOLOS", "",[], function(err, res) {
+  if (err) {
+    console.log(err);
+    alert(err);
+    return;
+  }
+  alert('to invite transfered');
+});
 ```
 
 # test HF 24
